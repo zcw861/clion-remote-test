@@ -2,10 +2,6 @@
 // Created by Administrator on 2025/10/10.
 //
 
-//
-// Created by Administrator on 2025/10/10.
-//
-
 #include "head.h"
 #include <iostream>
 
