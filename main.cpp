@@ -12,7 +12,6 @@
 int main() {
     int a = 5;
     int b = 3;
-    int c = 1;
 
     std::cout << a << " + " << b << " = " << add(a, b) << std::endl;
     std::cout << a << " - " << b << " = " << sub(a, b) << std::endl;
