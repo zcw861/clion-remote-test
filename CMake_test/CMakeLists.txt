@@ -7,9 +7,13 @@ set(CMAKE_CXX_STANDARD 20)
 # aux_source_directory(${PROJECT_SOURCE_DIR} src/test)
 file(GLOB test ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
+set(SOURCES ${test} ${main})
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 #add_library(calc SHARED ${test})
 add_library(calc STATIC ${test})
 
-#add_executable(app ${test})
+add_executable(app ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
+
+target_link_libraries(app calc)
